@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255c277cdc406a548b4f0d1fe367db8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndGameSystem
-  menuFinal: {fileID: 217142497}
+  endGameCanvas: {fileID: 217142497}
 --- !u!135 &803217463
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1907,7 +1907,7 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -2195,7 +2195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb79dbe27b9600f45b0198c0bda7f54d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyUI
-  textoLlaves: {fileID: 1432913206}
+  textKeys: {fileID: 1432913206}
 --- !u!114 &1420329880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3383,6 +3383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Door
   puertaVisual: {fileID: 226408487}
   puertaCollider: {fileID: 226408489}
+  textMensaje: {fileID: 0}
 --- !u!65 &2095860126
 BoxCollider:
   m_ObjectHideFlags: 0

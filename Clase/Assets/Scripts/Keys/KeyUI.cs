@@ -9,21 +9,25 @@ public class KeyUI : MonoBehaviour
 
     private void Awake()
     {
-        // 1. Busca el KeyManager en la escena y guárdalo en progress
+        // 1. Busca el KeyManager en la escena y guï¿½rdalo en progress
+        progress = FindAnyObjectByType<KeyManager>();
     }
 
     private void OnEnable()
     {
-        // 2. Suscríbete a OnKeyCountChanged
+        // 2. Suscrï¿½bete a OnKeyCountChanged
+        progress.OnKeyCountChanged += ActualizarTexto;
     }
 
     private void OnDisable()
     {
-        // 3. Desuscríbete
+        // 3. Desuscrï¿½bete
+        progress.OnKeyCountChanged-= ActualizarTexto;
     }
 
     private void ActualizarTexto(int x, int y)
     {
         // 4. Escribe el texto "Llaves: X/Y"
+        textKeys.text = $"{x}x{y}";
     }
 }

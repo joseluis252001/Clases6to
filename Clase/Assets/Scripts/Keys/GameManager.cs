@@ -8,8 +8,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (deleteProgress)
-            BorrarPartida();
+        if (deleteProgress)BorrarPartida();
     }
 
     public void BorrarPartida()
